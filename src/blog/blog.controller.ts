@@ -39,7 +39,7 @@ export class BlogController {
   }
 
   //Fetch a particular post using ID
-  @Get('post/:PostID')
+  @Get('post/:postID')
   async getPost(
     @Res() res: Response,
     @Param('postID', new ValidateObjectId()) postID,
